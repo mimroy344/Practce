@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation</title>
+	<style type="">
+		/*Style For Manu*/
+		ul.nav{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+		}
+		ul.nav li{
+			display: inline-block;
+			float: left;
+
+		}
+		ul.nav li a{
+			display: block;
+			padding: 10px;
+			background: #666;
+			color: #fff;
+			text-decoration: none;
+		}
+		ul.nav li a:hover{
+			background: green;
+			color: black;
+		}
+		/*For active style*/
+		ul.nav li.active a{
+			background: #0F6CEFFF;
+			color:orange;
+		}
+		/*Style For dropdown Manu*/
+		ul.nav li ul.dropdown{
+			position: absolute;
+			display: block;
+			top: -20000px;
+			width: 100px;
+			
+			margin: 0;
+			padding: 0;
+		}
+		ul.nav li ul.dropdown li{
+			float: none;
+			display: block;
+
+		}
+		ul.nav li ul.dropdown li a{
+
+		}
+		ul.nav li ul.dropdown li a:hover{
+
+		}
+		/*For trigger*/
+		ul.nav li:hover ul.dropdown{
+        	top: 46px;
+        	left: 140px;
+        }
+	</style>
+</head>
+<body>
+	<!-- Start Manu -->
+	<ul class="nav">
+		<li><a href="#">Home</a></li>
+		<li class="active"><a href="#">Practice</a></li>
+		<li>
+			<a href="#">Code</a>
+			<!-- Start dropdown Manu -->
+			<ul class="dropdown">
+				<li><a href="">HTML</a></li>
+				<li><a href="">CSS</a></li>
+				<li><a href="">jQuery</a></li>
+				<li><a href="">PHP</a></li>
+				<li><a href="">SQL</a></li>
+			</ul>
+			<!-- End dropdown -->
+		</li>
+		<li><a href="#">Exam</a></li>
+		<li><a href="#">Result</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+	<!-- End Manu -->
+</body>
+</html>
